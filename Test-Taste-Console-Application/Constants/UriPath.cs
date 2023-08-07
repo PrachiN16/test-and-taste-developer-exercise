@@ -6,10 +6,10 @@
         private const string BodiesUri = "/rest/bodies";
 
         public const string GetAllPlanetsWithMoonsQueryParameters =
-            BodiesUri + "?data=id,semiMajorAxis,moons,moon,rel&filter[]=isPlanet,neq,false";
+            BodiesUri + "?data=id,semiMajorAxis,moons,moon,rel,gravity&filter[]=isPlanet,neq,false";
 
         public const string GetAllMoonsWithMassQueryParameters = BodiesUri +
-                                               "?data=id,mass,massValue,massExponent,massValue&filter[]=aroundPlanet,gt,null";
+                                               "?data=id,mass,massValue,massExponent,massValue,gravity&filter[]=aroundPlanet";
 
         public const string GetMoonByIdQueryParameters = BodiesUri + "/";
     }
