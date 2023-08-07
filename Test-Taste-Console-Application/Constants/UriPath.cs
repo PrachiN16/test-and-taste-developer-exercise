@@ -9,7 +9,7 @@
             BodiesUri + "?data=id,semiMajorAxis,moons,moon,rel,gravity&filter[]=isPlanet,neq,false";
 
         public const string GetAllMoonsWithMassQueryParameters = BodiesUri +
-                                               "?data=id,mass,massValue,massExponent,massValue,gravity&filter[]=aroundPlanet";
+                                               "?data=id,mass,massValue,massExponent,massValue,gravity&filter[]=aroundPlanet,gt,null";
 
         public const string GetMoonByIdQueryParameters = BodiesUri + "/";
     }
